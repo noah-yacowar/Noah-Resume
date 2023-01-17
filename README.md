@@ -1,1 +1,1 @@
-# My personal Resume written using LaTeX
+# My personal resume written using LaTeX
