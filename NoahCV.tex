@@ -1,0 +1,149 @@
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{url}
+\usepackage{parskip} 	
+
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+\usepackage{tabularx}
+
+\usepackage{enumitem}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{10pt}
+
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+\usepackage{fontawesome5}
+
+\begin{document}
+
+\pagestyle{empty} 
+
+ \begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Noah Yacowar} \\[7.5pt]
+\href{https://github.com/noah-yacowar}{\raisebox{-0.05\height}\faGithub\ noah-yacowar} \ $|$ \ 
+\href{https://linkedin.com/in/noah-yacowar-0314011b5}{\raisebox{-0.05\height}\faLinkedin\ noah-yacowar} \ $|$ \ 
+\href{mailto:nyacowar@uwaterloo.ca}{\raisebox{-0.05\height}\faEnvelope \ nyacowar@uwaterloo.ca} \ $|$ \ 
+\href{tel:+16478706663}{\raisebox{-0.05\height}\faMobile \ +1 647-870-6663} \\
+\end{tabularx}
+
+\section{Skills} 
+\textbf{Languages:} Python, Java, C, C++, C\#, HTML, CSS, JavaScript, LaTeX \\ 
+\textbf{Technologies/Frameworks:} Git, Arduino, OpenCV, PyTorch, Jupyter Notebook, MonoGame \\
+\textbf{Software:} Unity, Unreal Engine, Github, Visual Studio Code, Microsoft Office
+
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Unity First-Person Shooter} \href{https://github.com/NoahYacowar/Unity-HorrorFPS}{\raisebox{-0.05\height}\faLink} & \hfill July 2022 - August 2022 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.45em, itemsep=4pt]
+        \item Built horror-themed first-person shooter in unity, in which levels are randomly generated using prefabs.
+        \item Implemented \textbf{A* path-finding algorithm} for the enemy, and used a parallel combination of a linked list and Grid System for level generation.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Guitar Playing Robot}  \href{https://github.com/NoahYacowar/Guitar-Playing-Robot}{\raisebox{-0.05\height}\faLink} & \hfill September 2022 - November 2022 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.45em, itemsep=4pt]
+        \item Built a robot that plays a string on guitar. The system has fretting and strumming mechanisms. 
+        \item Encoded notes on coloured paper strips. Used \textbf{motor encoders} to coordinate both mechanisms.
+        \item Processed input from a colour and ultrasonic sensor to interpret song notes and timing (\textbf{95\%} accurate).
+        \item Programmed functions in \textbf{C} to control onboard mechanisms using the RobotC library. 
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Personal Website} \href{https://noah-yacowar.github.io/Personal-Website/}{\raisebox{-0.05\height}\faLink} & \hfill December 2022 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.45em, itemsep=4pt]
+        \item Produced a fully responsive personal website using HTML, CSS and Vanilla \textbf{Javascript}.
+        \item Implemented adaptive website functionality for varying screen sizes using \textbf{@media} rules. 
+    \end{itemize}
+    \end{minipage}
+}
+\\[30px]
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Toyota Innovation Challenge} & \hfill November 2022 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.45em, itemsep=4pt]
+        \item Partook in hackathon using computer vision to track car's wheel to take a picture at appropriate time. 
+        \item Built minimum bounding box algorithm which isolated the front wheel with \textbf{±1mm} error.
+        \item Built program using \textbf{OpenCV} code snippets, implementing Hough transform and contour detection functions. When the car passes a certain point, a picture is taken. %update
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx} 
+
+%Experience
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Computer Vision Sub-Team Member} & \hfill December 2022 - present \\
+Waterloo Aerial Robotics Group \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.45em, itemsep=4pt]
+        \item Developed an image classifier trained on the CIFAR-10 dataset using the \textbf{PyTorch} framework.
+        \item Used a trained convolutional neural network to interpret test images with \textbf{82\%} accuracy.
+        \item Graphed losses and accuracy of the model using \textbf{Matplotlib}.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Computer Science Club Founder} & \hfill April 2021 - June 2022 \\
+Personal Venture \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.45em, itemsep=4pt]
+        \item Led group of 7 students alongside 2 other instructors. Taught coding concepts from object-oriented programming to \textbf{data sorting} and \textbf{game development}, meeting 2-3 times per week.
+        \item Organized meetings with industry workers to give insight into industry tools and experiences.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Candidate for BASc in Mechatronics Engineering} & \hfill September 2022 - present \\
+University of Waterloo - President's Scholarship of Distinction
+
+\end{tabularx}
+
+\vfill
+
+\end{document}
